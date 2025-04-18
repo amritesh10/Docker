@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  web:
+    image: harsh075/html-jenkins-app  # Use your Docker Hub image
+    ports:
+      - "3000:80"  # Map container port 80 to host port 8080
+    restart: always  # Restart container if it stops
